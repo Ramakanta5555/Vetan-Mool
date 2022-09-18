@@ -1,0 +1,185 @@
+package com.vetan.mool.TestCases;
+
+import org.testng.annotations.Test;
+
+import com.vetan.mool.PageObjects.AttendancePage;
+import com.vetan.mool.PageObjects.LoginPage;
+
+public class TC_Attendance_001 extends BaseClass{
+	
+	@Test
+	public void AttendanceTest() throws InterruptedException
+	{
+		driver.manage().window().maximize();
+		
+		LoginPage lp = new LoginPage(BaseClass.driver);
+		Thread.sleep(2000);		
+		
+		AttendancePage ap = new AttendancePage(BaseClass.driver);
+		Thread.sleep(2000);
+		
+		
+		//Login
+		
+		lp.settxtUsername(userName);
+		
+		lp.clickbtnContinue();
+		Thread.sleep(2000);
+		
+		lp.settxtPassword(password);
+		Thread.sleep(2000);
+		
+		lp.clickbtnSignin();
+		Thread.sleep(5000);
+		
+		System.out.println(driver.getTitle());
+		Thread.sleep(2000);
+		
+		ap.clickbtnNavAttendance();
+		Thread.sleep(2000);
+		
+		//Holiday Setting
+		
+		ap.clickbtnHolidayCalender();
+		Thread.sleep(2000);
+		
+		ap.clickbtnCal2020();
+		Thread.sleep(2000);
+		
+		ap.clickbtnHolidayCalender();
+		Thread.sleep(2000);
+		
+		ap.clickbtnCal2022();
+		Thread.sleep(2000);
+		
+		ap.clickbtnHolidayAddNew();
+		Thread.sleep(2000);
+		
+		ap.settxtHolidayName("Selenium_Holiday");
+		Thread.sleep(2000);
+		
+		ap.clickbtnHolidayDate();
+		Thread.sleep(2000);
+			
+		ap.clickbtnHolidayDate04();
+		Thread.sleep(2000);
+		
+		ap.clickbtnHolidayType();
+		Thread.sleep(2000);
+		
+		ap.clickbtnHolidayCompany();
+		Thread.sleep(2000);
+		
+		ap.clickbtnHolidaySubmit();
+		Thread.sleep(2000);
+		
+		if(driver.getPageSource().contains("Selenium_Holiday"))
+		{
+			System.out.println("Error");
+		}
+		else
+		{
+			System.out.println("Holiday has been deleted");
+		}
+		
+		ap.clickbtnHolidayDelete();
+		Thread.sleep(2000);
+		
+		ap.clickbtnHolidayConfirmDelete();
+		Thread.sleep(5000);
+		
+		if(driver.getPageSource().contains("Selenium_Holiday"))
+		{
+			System.out.println("Error");
+		}
+		else
+		{
+			System.out.println("Holiday has been deleted");
+		}
+		
+		
+		//Leave
+		
+		ap.clickbtnLeaveSetting();
+		Thread.sleep(2000);
+		
+		ap.clickbtnLeaveAdd();
+		Thread.sleep(2000);
+		
+		ap.clicktxtLeaveName();
+		Thread.sleep(2000);
+		
+		ap.settxtLeaveName("Test_Leave");
+		Thread.sleep(2000);
+		
+		ap.settxtLeaveDescription("Test");
+		Thread.sleep(2000);
+		
+		ap.settxtLeaveBalance("5");
+		Thread.sleep(2000);
+		
+		ap.clickbtnLeaveCreditFrequency();
+		Thread.sleep(2000);
+		
+		ap.clickbtnLeaveQuaterly();
+		Thread.sleep(2000);
+		
+		ap.clickbtnRadioYesLeaveEncashable();
+		Thread.sleep(2000);
+		
+		ap.clickbtnRadioNoLeaveForwarNextYear();
+		Thread.sleep(2000);
+		
+		ap.clickbtnLeaveSubmit();
+		Thread.sleep(2000);
+		
+		ap.clickbtnLeaveDelete();
+		Thread.sleep(2000);
+		
+		ap.clickbtnLeaveConfirmDelete();
+		Thread.sleep(2000);
+		
+		
+		//Weekly Off Setting
+		
+		ap.clickbtnWeeklyOffSetting();
+		Thread.sleep(7000);
+		
+		ap.clickbtnAddNewWeeklyOff();
+		Thread.sleep(2000);
+		
+		ap.settxtWeeklyOffName("Test_Weeklyoff");
+		Thread.sleep(2000);
+		
+		ap.clickbtnWeeklyOffGroup();
+		Thread.sleep(2000);
+		
+		ap.clickbtnTestGroup();
+		Thread.sleep(2000);
+		
+		ap.clickbtnWeeklyOffOne();
+		Thread.sleep(2000);
+		
+		ap.clickbtnWeeklyOffOneWednesday();
+		Thread.sleep(2000);
+		
+		ap.clickbtnWeeklyOffTwo();
+		Thread.sleep(2000);
+		
+		ap.clickbtnWeeklyOffTwoFriday();
+		Thread.sleep(2000);
+		
+		ap.clickbtnWeeklyOffSubmit();
+		Thread.sleep(2000);
+		
+		ap.clickbtnWeeklyOffDelete();
+		Thread.sleep(2000);
+		
+		ap.clickbtnWeeklyOffConfirmDelete();
+		Thread.sleep(2000);
+		
+		
+		
+		
+	}
+}

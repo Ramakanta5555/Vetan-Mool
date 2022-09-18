@@ -1,0 +1,4 @@
+baseURL = "https://vetan.moolfinance.com";
+userName = "PERCE1111N";
+password = "Mool@2020";
+chromepath = /Users/ramakantasamal/Eclipse-06-Workspace/Vetan_Mool/Drivers/chromedriver
