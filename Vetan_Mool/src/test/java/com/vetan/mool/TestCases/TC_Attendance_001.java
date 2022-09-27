@@ -1,6 +1,5 @@
 package com.vetan.mool.TestCases;
 
-import org.junit.Assert;  
 import org.testng.annotations.Test;
 
 import com.vetan.mool.PageObjects.AttendancePage;

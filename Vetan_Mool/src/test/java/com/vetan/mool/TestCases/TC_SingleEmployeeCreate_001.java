@@ -133,7 +133,7 @@ public class TC_SingleEmployeeCreate_001 extends BaseClass{
 		sep.clickSubmit();
 		Thread.sleep(2000);
 		
-		if(driver.getPageSource().contains("Employee Created Successfully"))
+		if(driver.getPageSource().contains("Successfully created the employee"))
 		{
 			Assert.assertTrue(true);
 			System.out.println("Passed");

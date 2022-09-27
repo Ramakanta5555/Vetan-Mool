@@ -26,8 +26,19 @@ public class EmployeeProfilePage {
 		btnEmployee.click();
 	}
 	
+	@FindBy(xpath = "//*[@id=\"root\"]/section/section/div/main/main/div/div/div/div/div/div/div/div[2]/table/tbody/tr[2]/td[11]/div/div/div/img")
+	@CacheLookup
+	WebElement btnEmployeeOptionBtn;
+	
+	public void clickbtnEmployeeOptionBtn()
+	{
+		btnEmployeeOptionBtn.click();
+	}
+	
+	
+	
 	//Update Pay Structure
-	@FindBy(xpath = "(//div[contains(text(),'Update Pay Structure')])[1]")
+	@FindBy(xpath = "(//span[normalize-space()='Update Pay Structure'])[1]")
 	@CacheLookup
 	WebElement btnUpdatePayStucture;
 	
@@ -40,13 +51,19 @@ public class EmployeeProfilePage {
 	@CacheLookup
 	WebElement txtPerBasic;
 	
+	public void clicktxtPerBasic()
+	{
+		txtPerBasic.click();
+	}
+	
 	public void cleartxtPerBasic()
 	{
-		txtPerBasic.clear();
+		txtPerBasic.sendKeys(Keys.COMMAND + "a");
+		txtPerBasic.sendKeys(Keys.BACK_SPACE);
 	}
 	
 	public void settxtPerBasic(String pCtc)
-	{
+	{ 
 		txtPerBasic.sendKeys(pCtc);
 	}
 	
@@ -56,7 +73,8 @@ public class EmployeeProfilePage {
 	
 	public void cleartxtPerHra()
 	{
-		txtPerHra.clear();
+		txtPerBasic.sendKeys(Keys.CONTROL,"a");
+		txtPerHra.sendKeys(Keys.DELETE);
 	}
 	
 	public void settxtPerHra(String pHra)

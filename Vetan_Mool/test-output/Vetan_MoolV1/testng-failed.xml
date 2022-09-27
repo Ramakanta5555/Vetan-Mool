@@ -5,15 +5,15 @@
     <listener class-name="com.vetan.mool.Utilities.reporting"/>
   </listeners>
   <test thread-count="5" name="Mool Vetan Test(failed)">
-    <parameter name="browser" value="safari"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.vetan.mool.TestCases.TC_LoginFlow_001">
+      <class name="com.vetan.mool.TestCases.TC_EmployeeProfilePage_001">
         <methods>
           <include name="tearDown"/>
-          <include name="LoginTest"/>
           <include name="setup"/>
+          <include name="EmployeeProfilePageTest"/>
         </methods>
-      </class> <!-- com.vetan.mool.TestCases.TC_LoginFlow_001 -->
+      </class> <!-- com.vetan.mool.TestCases.TC_EmployeeProfilePage_001 -->
     </classes>
   </test> <!-- Mool Vetan Test(failed) -->
 </suite> <!-- Failed suite [Vetan_MoolV1] -->

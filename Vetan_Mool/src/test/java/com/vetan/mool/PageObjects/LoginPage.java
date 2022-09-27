@@ -26,7 +26,7 @@ public class LoginPage {
 		txtUsername.sendKeys(uname);
 	}
 	
-	@FindBy(xpath = "(//span[normalize-space()='Continue'])[1]")
+	@FindBy(xpath = "(//div[contains(text(),'Continue')])[1]")
 	@CacheLookup
 	WebElement btnContinue;
 	

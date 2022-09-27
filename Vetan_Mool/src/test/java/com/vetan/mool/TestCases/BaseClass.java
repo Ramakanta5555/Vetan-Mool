@@ -1,6 +1,6 @@
 package com.vetan.mool.TestCases;
 
-import java.io.File; 
+import java.io.File;  
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
@@ -27,6 +27,7 @@ public class BaseClass {
 	public static WebDriver driver; 
 	
 	public static Logger logger;
+	
 	
 	
 	@Parameters("browser")
@@ -58,6 +59,8 @@ public class BaseClass {
 		FileUtils.copyFile(source, target);
 		System.out.println("Screenshot taken");
 	}
+	
+	
 	
 	
 	

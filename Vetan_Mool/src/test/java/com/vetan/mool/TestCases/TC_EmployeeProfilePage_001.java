@@ -1,6 +1,7 @@
 package com.vetan.mool.TestCases;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.vetan.mool.PageObjects.EmployeeProfilePage;
@@ -39,116 +40,116 @@ public class TC_EmployeeProfilePage_001 extends BaseClass {
 		epp.clickbtnEmployee();
 		Thread.sleep(2000);
 		
+		epp.clickbtnEmployeeOptionBtn();
+		Thread.sleep(2000);
+		
 		//Update Pay Structure 
 
 		
-//		epp.clickbtnUpdatePayStructure();
-//		Thread.sleep(2000);
-//		
-//		epp.cleartxtPerBasic();
-//		Thread.sleep(2000);
-//		
-//		epp.cleartxtPerBasic();
-//		Thread.sleep(2000);
-//		
-//		epp.settxtPerBasic("50");
-//		Thread.sleep(2000);
-//		
-//		epp.cleartxtPerHra();
-//		Thread.sleep(2000);
-//		
-//		epp.cleartxtPerHra();
-//		Thread.sleep(2000);
-//		
-//		epp.settxtPerHra("29");
-//		Thread.sleep(5000);
-//		
-//		epp.clickbtnFoodAmountCheckBox();
-//		Thread.sleep(2000);
-//		
-//		epp.cleartxtFoodPMonth();
-//		Thread.sleep(2000);
-//		
-//		epp.settxtFoodPMonth("2120");
-//		Thread.sleep(2000);
-//		
-//		epp.clickbtnMobileAmountCheckBox();
-//		Thread.sleep(2000);
-//		
-//		epp.cleartxtMobilePMonth();
-//		Thread.sleep(2000);
-//		
-//		epp.settxtFoodPMonth("1500");
-//		Thread.sleep(2000);
-//		
-//		epp.clickbtnSubmitPayStructure();
-//		Thread.sleep(2000);
-//		
-//		//EditCredentials
-//		
-//		epp.clickbtnEditCredentials();
-//		Thread.sleep(2000);
-//		
-//		for (int i = 0; i < 10; i++)
-//		{
-//			epp.cleartxtECPan();
-//		} 
-//		Thread.sleep(2000);
-//		
-//		epp.settxtECPan("OOLSP598S");
-//		Thread.sleep(2000);
-//		
-//		for (int i = 0; i < 10; i++)
-//		{
-//			epp.cleartxtECPhone();
-//		}
-//		Thread.sleep(2000);
-//		
-//		epp.settxtECPhone("5669855423");
-//		Thread.sleep(2000);
-//		
-//		for (int i = 0; i < 16; i++)
-//		{
-//			epp.cleartxtECEmail();
-//		}
-//		Thread.sleep(2000);
-//		
-//		epp.settxttxtECEmail("ksidh@yahoo.com");
-//		Thread.sleep(2000);
-//		
-//		epp.clickbtnECUpdate();
-//		Thread.sleep(2000);
+		epp.clickbtnUpdatePayStructure();
+		Thread.sleep(2000);
+		
+		epp.cleartxtPerBasic();
+		Thread.sleep(2000);
+		
+		epp.settxtPerBasic("50");
+		Thread.sleep(2000);
+		
+		epp.cleartxtPerHra();
+		Thread.sleep(2000);
+		
+		epp.cleartxtPerHra();
+		Thread.sleep(2000);
+		
+		epp.settxtPerHra("29");
+		Thread.sleep(5000);
+		
+		epp.clickbtnFoodAmountCheckBox();
+		Thread.sleep(2000);
+		
+		epp.cleartxtFoodPMonth();
+		Thread.sleep(2000);
+		
+		epp.settxtFoodPMonth("2120");
+		Thread.sleep(2000);
+		
+		epp.clickbtnMobileAmountCheckBox();
+		Thread.sleep(2000);
+		
+		epp.cleartxtMobilePMonth();
+		Thread.sleep(2000);
+		
+		epp.settxtFoodPMonth("1500");
+		Thread.sleep(2000);
+		
+		epp.clickbtnSubmitPayStructure();
+		Thread.sleep(2000);
+		
+		//EditCredentials
+		
+		epp.clickbtnEditCredentials();
+		Thread.sleep(2000);
+		
+		for (int i = 0; i < 10; i++)
+		{
+			epp.cleartxtECPan();
+		} 
+		Thread.sleep(2000);
+		
+		epp.settxtECPan("OOLSP598S");
+		Thread.sleep(2000);
+		
+		for (int i = 0; i < 10; i++)
+		{
+			epp.cleartxtECPhone();
+		}
+		Thread.sleep(2000);
+		
+		epp.settxtECPhone("5669855423");
+		Thread.sleep(2000);
+		
+		for (int i = 0; i < 16; i++)
+		{
+			epp.cleartxtECEmail();
+		}
+		Thread.sleep(2000);
+		
+		epp.settxttxtECEmail("ksidh@yahoo.com");
+		Thread.sleep(2000);
+		
+		epp.clickbtnECUpdate();
+		Thread.sleep(2000);
 		
 		//Change Password
 		
-//		epp.clickbtnChangePassword();
-//		Thread.sleep(2000);
-//		
-//		epp.settxtPassword(password);
-//		Thread.sleep(2000);
-//		
-//		epp.clickbtnEyeBtn();
-//		Thread.sleep(2000);
-//		
-//		epp.settxtConfirmPassword(password);
-//		Thread.sleep(2000);
-//		
-//		epp.clickbtnEyeBtn1();
-//		Thread.sleep(2000);
-//		
-//		epp.clickbtnPassSubmit();
-//		Thread.sleep(2000);
-//		
-//		if(driver.getPageSource().contains("Successfully updated the employee password"))
-//		{
-//			Assert.assertTrue(true);
-//			System.out.println("Password changed");
-//		}
-//		else
-//		{
-//			Assert.assertTrue(false);
-//			System.out.println("Unable to change the password");
-//		}
+		epp.clickbtnChangePassword();
+		Thread.sleep(2000);
+		
+		epp.settxtPassword(password);
+		Thread.sleep(2000);
+		
+		epp.clickbtnEyeBtn();
+		Thread.sleep(2000);
+		
+		epp.settxtConfirmPassword(password);
+		Thread.sleep(2000);
+		
+		epp.clickbtnEyeBtn1();
+		Thread.sleep(2000);
+		
+		epp.clickbtnPassSubmit();
+		Thread.sleep(2000);
+		
+		if(driver.getPageSource().contains("Successfully updated the employee password"))
+		{
+			Assert.assertTrue(true);
+			System.out.println("Password changed");
+		}
+		else
+		{
+			Assert.assertTrue(false);
+			System.out.println("Unable to change the password");
+		}
 		
 		//View
 		

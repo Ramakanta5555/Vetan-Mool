@@ -19,7 +19,7 @@ public class PayRollPage {
 	@FindBy(xpath= "//*[@id=\"root\"]/section/aside/div/div/div[1]/div[2]/div[1]/ul/li[3]/span/img")
 	WebElement btnPayroll;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/section/section/div/div[2]/a[3]/div/div[2]")
+	@FindBy(xpath = "(//h3[normalize-space()='Payroll for July'])[1]")
 	WebElement btnPayrolljune;
 	
 	@FindBy(xpath = "//*[@id=\"rc-tabs-0-panel-1\"]/div/main/div[1]/div/button[2]/div/div")

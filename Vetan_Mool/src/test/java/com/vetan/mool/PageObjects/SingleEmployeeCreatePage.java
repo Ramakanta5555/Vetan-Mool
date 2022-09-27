@@ -26,22 +26,22 @@ WebDriver ldriver;
 	@FindBy(xpath = "/html/body/div[2]/div/div/ul/li[1]/span[2]")
 	WebElement btnSingleUser;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/main/div/div[2]/div[1]/div/input")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/main/div/div[2]/div[1]/div/div/div/input")
 	WebElement txtPan;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/main/div/div[2]/div[2]/div/input")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/main/div/div[2]/div[2]/div/div/div/input")
 	WebElement txtPhonenumber;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/main/div/div[2]/div[3]/div/input")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/main/div/div[2]/div[3]/div/div/div/input")
 	WebElement txtEmail;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/main/div/div[2]/div[4]/div/input")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/main/div/div[2]/div[4]/div/div/div/input")
 	WebElement txtName;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/main/div/div[2]/div[5]/div/input")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/main/div/div[2]/div[5]/div/div/div/input")
 	WebElement txtEmpid;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/main/div/div[2]/div[6]/div/div/div/input")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/main/div/div[2]/div[6]/div/div/div/div/div/input")
 	WebElement clickDob;
 	
 	@FindBy(xpath = "/html/body/div[4]/div/div/div/div/div[1]/div[1]/div/button[2]")
