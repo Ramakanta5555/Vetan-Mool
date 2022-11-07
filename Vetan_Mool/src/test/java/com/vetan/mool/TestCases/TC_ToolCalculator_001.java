@@ -1,14 +1,18 @@
 package com.vetan.mool.TestCases;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.testng.annotations.Test;
 
 import com.vetan.mool.PageObjects.LoginPage;
 import com.vetan.mool.PageObjects.ToolCalculatorPage;
 
 public class TC_ToolCalculator_001 extends BaseClass {
 	
+	@Test
 	public void ToolCalculatorTest() throws InterruptedException
 	{
+		
+		
 		driver.manage().window().maximize();
 		
 		LoginPage lp = new LoginPage(BaseClass.driver);

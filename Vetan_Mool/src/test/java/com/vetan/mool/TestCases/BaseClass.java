@@ -7,6 +7,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -15,13 +16,19 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+
+import com.vetan.mool.PageObjects.LoginPage;
 import com.vetan.mool.Utilities.readConfig;
 
 public class BaseClass {
 	
+	public static final String scrollDown = null;
+
 	readConfig readconfig = new readConfig();
 	
-	public String baseURL = readconfig.getApplicationURL();
+	public String vetanURL = readconfig.getvetanURL();
+	public String stageURl = readconfig.getstageURL();
+	public String landingPageURL = readconfig.getlandingPageURL();
 	public String userName = readconfig.getuserName();
 	public String password = readconfig.getpassword();
 	public static WebDriver driver; 
@@ -42,7 +49,7 @@ public class BaseClass {
 			driver = new SafariDriver();
 		}
 		
-		driver.get(baseURL);
+		driver.get(landingPageURL);
 		
 		
 		logger  =  Logger.getLogger("Vetan_Mool");
@@ -59,6 +66,22 @@ public class BaseClass {
 		FileUtils.copyFile(source, target);
 		System.out.println("Screenshot taken");
 	}
+	
+
+	//Scrolldown
+
+	public void scrollDown()
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,500)");
+	}
+
+	public void scrollUp()
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,-1500)");
+	}
+
 	
 	
 	
@@ -129,6 +152,28 @@ public class BaseClass {
 		String generatedString = RandomStringUtils.randomAlphabetic(6);
 		return generatedString;
 	}
+
+	//Login
+
+	public void login() throws InterruptedException
+	{
+	LoginPage lp = new LoginPage(BaseClass.driver);
+	Thread.sleep(2000);
+
+	lp.settxtUsername(userName);
+
+	lp.clickbtnContinue();
+	Thread.sleep(2000);
+	
+	lp.settxtPassword(password);
+	Thread.sleep(2000);
+	
+	lp.clickbtnSignin();
+	Thread.sleep(2000);
+			
+	System.out.println(driver.getTitle());
+
+}
 		
 	
 	@AfterClass
@@ -136,4 +181,6 @@ public class BaseClass {
 	{
 		driver.quit();
 	}
+
+	
 }

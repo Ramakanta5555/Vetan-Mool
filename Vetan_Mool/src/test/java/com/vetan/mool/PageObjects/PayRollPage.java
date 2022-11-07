@@ -16,10 +16,10 @@ public class PayRollPage {
 	}
 	
 	
-	@FindBy(xpath= "//*[@id=\"root\"]/section/aside/div/div/div[1]/div[2]/div[1]/ul/li[3]/span/img")
+	@FindBy(xpath= "(//img[@alt='Payroll'])[1]")
 	WebElement btnPayroll;
 	
-	@FindBy(xpath = "(//h3[normalize-space()='Payroll for July'])[1]")
+	@FindBy(xpath = "(//div[@class='flex align-center justify-between single-payroll-heading'])[2]")
 	WebElement btnPayrolljune;
 	
 	@FindBy(xpath = "//*[@id=\"rc-tabs-0-panel-1\"]/div/main/div[1]/div/button[2]/div/div")

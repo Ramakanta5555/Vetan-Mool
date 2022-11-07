@@ -21,12 +21,25 @@ public class readConfig {
 		}
 	}
 	
-	public String getApplicationURL()
+	public String getvetanURL()
 	{
-		String url = pro.getProperty("baseURL");
+		String url = pro.getProperty("vetanURL");
+		return url;
+	}
+
+	public String getstageURL()
+	{
+		String url = pro.getProperty("vetanURL");
+		return url;
+	}
+
+	public String getlandingPageURL()
+	{
+		String url = pro.getProperty("landingPageURL");
 		return url;
 	}
 	
+
 	public String getuserName()
 	{
 		String uname = pro.getProperty("userName");

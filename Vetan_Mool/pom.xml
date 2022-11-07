@@ -30,6 +30,10 @@
         <version>3.0.0-M7</version>
         <configuration>
           <suiteXmlFiles>
+          
+    <!--  Here you can give the xml file name where you storing your testcases -->
+            <!-- <suiteXmlFile>employeeProfilePageTestNG.xml</suiteXmlFile> -->
+            <!-- <suiteXmlFile>testNG.xml</suiteXmlFile> -->
             <suiteXmlFile>testNG.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>

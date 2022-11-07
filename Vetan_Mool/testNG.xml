@@ -7,14 +7,20 @@
 	<listeners>
 		<listener class-name="com.vetan.mool.Utilities.reporting"></listener>
 	</listeners>
-
-	<test name="Mool Vetan Test">
+	
+	<test name="Mool Login Flow Chrome"> 
 		<parameter name="browser" value="chrome"/>
 			<classes>
-				<class name="com.vetan.mool.TestCases.TC_LoginFlow_001"></class>
+				<class name="com.vetan.mool.TestCases.TC_LandingPageCalculator_001"></class>
 			</classes>
-	</test>
+	</test> 
 
-
+	<!-- <test name="Mool Login Flow Safari"> 
+		<parameter name="browser" value="safari"/>
+			<classes>
+				<class name="com.vetan.mool.TestCases.TC_PayRollProcess_001"></class>
+			</classes>
+	</test> -->
+	
 </suite>
 

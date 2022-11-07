@@ -4,16 +4,16 @@
   <listeners>
     <listener class-name="com.vetan.mool.Utilities.reporting"/>
   </listeners>
-  <test thread-count="5" name="Mool Vetan Test(failed)">
+  <test thread-count="5" name="Mool Login Flow Chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.vetan.mool.TestCases.TC_EmployeeProfilePage_001">
+      <class name="com.vetan.mool.TestCases.TC_MappedOrg_001">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="EmployeeProfilePageTest"/>
+          <include name="mappedOrganisationTest"/>
         </methods>
-      </class> <!-- com.vetan.mool.TestCases.TC_EmployeeProfilePage_001 -->
+      </class> <!-- com.vetan.mool.TestCases.TC_MappedOrg_001 -->
     </classes>
-  </test> <!-- Mool Vetan Test(failed) -->
+  </test> <!-- Mool Login Flow Chrome(failed) -->
 </suite> <!-- Failed suite [Vetan_MoolV1] -->

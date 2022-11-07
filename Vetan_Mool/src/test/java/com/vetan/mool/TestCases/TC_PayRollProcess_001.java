@@ -4,38 +4,34 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import com.vetan.mool.PageObjects.LoginPage;
 import com.vetan.mool.PageObjects.PayRollPage;
 
 public class TC_PayRollProcess_001 extends BaseClass{
 	
 	@Test
 	public void PayRollProess() throws InterruptedException, IOException
-	{
+	{	
+		driver.get(vetanURL);
 		driver.manage().window().maximize();
 		
 		
-		LoginPage lp = new LoginPage(BaseClass.driver);
-		Thread.sleep(2000);
+		BaseClass BC = new BaseClass();
 		
 		PayRollPage pp = new PayRollPage(BaseClass.driver);
 		Thread.sleep(2000);
-		
-		lp.settxtUsername(userName);
 
-		lp.clickbtnContinue();
-		Thread.sleep(2000);
-		
-		lp.settxtPassword(password);
-		Thread.sleep(2000);
-		
-		lp.clickbtnSignin();
-		Thread.sleep(2000);
-				
-		System.out.println(driver.getTitle());
+		//Login
+
+		BC.login();
+		Thread.sleep(5000);
+
+		//PayRollProcess
 		
 		pp.clickbtnPayroll();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
+		
+//	 	JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("window.scrollBy(0,1500)");
 		
 		pp.clickbtnPayrolljune();
 		Thread.sleep(5000);

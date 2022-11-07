@@ -51,11 +51,6 @@ public class EmployeeProfilePage {
 	@CacheLookup
 	WebElement txtPerBasic;
 	
-	public void clicktxtPerBasic()
-	{
-		txtPerBasic.click();
-	}
-	
 	public void cleartxtPerBasic()
 	{
 		txtPerBasic.sendKeys(Keys.COMMAND + "a");
@@ -73,7 +68,7 @@ public class EmployeeProfilePage {
 	
 	public void cleartxtPerHra()
 	{
-		txtPerBasic.sendKeys(Keys.CONTROL,"a");
+		txtPerHra.sendKeys(Keys.COMMAND + "a");
 		txtPerHra.sendKeys(Keys.DELETE);
 	}
 	
@@ -82,13 +77,13 @@ public class EmployeeProfilePage {
 		txtPerHra.sendKeys(pHra);
 	}
 	
-	@FindBy(xpath = "(//input[@value='15'])[2]")
+	@FindBy(xpath = "(//input[@value='0'])[1]")
 	@CacheLookup
 	WebElement txtFoodPMonth;
 	
 	public void cleartxtFoodPMonth()
 	{
-		txtFoodPMonth.clear();
+		txtFoodPMonth.sendKeys(Keys.COMMAND + "a" + Keys.DELETE);
 	}
 	
 	public void settxtFoodPMonth(String fMonth)
@@ -96,7 +91,7 @@ public class EmployeeProfilePage {
 		txtFoodPMonth.sendKeys(fMonth);
 	}
 	
-	@FindBy(xpath = "(//input[@type='checkbox'])[18]")
+	@FindBy(xpath = "(//input[@type='checkbox'])[24]")
 	@CacheLookup
 	WebElement btnFoodAmountCheckBox;
 	
@@ -104,14 +99,25 @@ public class EmployeeProfilePage {
 	{
 		btnFoodAmountCheckBox.click();
 	}
+
+	@FindBy(xpath = "(//input[@type='checkbox'])[24]")
+	@CacheLookup
+	WebElement btnFoodPercnCheckBox;
 	
-	@FindBy(xpath = "(//input[@value='0'])[1]")
+	public void clickbtnFoodPercnCheckBox()
+	{
+		btnFoodAmountCheckBox.click();
+	}
+	
+	
+	
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/main/div[2]/div[2]/div/div/div[2]/input")
 	@CacheLookup
 	WebElement txtMobilePMonth;
 	
 	public void cleartxtMobilePMonth()
 	{
-		txtMobilePMonth.clear();
+		txtMobilePMonth.sendKeys(Keys.COMMAND + "a" + Keys.DELETE);
 	}
 	
 	public void settxtMobilePMonth(String mMonth)
@@ -119,7 +125,7 @@ public class EmployeeProfilePage {
 		txtMobilePMonth.sendKeys(mMonth);
 	}
 	
-	@FindBy(xpath = "(//input[@type='checkbox'])[19]")
+	@FindBy(xpath = "(//input[@type='checkbox'])[25]")
 	@CacheLookup
 	WebElement btnMobileAmountCheckBox;
 	
@@ -128,7 +134,7 @@ public class EmployeeProfilePage {
 		btnMobileAmountCheckBox.click();
 	}
 	
-	@FindBy(xpath = "(//span[contains(text(),'Update')])[1]")
+	@FindBy(xpath = "(//span[normalize-space()='Update'])[1]")
 	@CacheLookup
 	WebElement btnSubmitPayStructure;
 	
