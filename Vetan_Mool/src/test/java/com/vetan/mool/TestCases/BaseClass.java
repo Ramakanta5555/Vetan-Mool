@@ -49,7 +49,7 @@ public class BaseClass {
 			driver = new SafariDriver();
 		}
 		
-		driver.get(landingPageURL);
+		driver.get(vetanURL);
 		
 		
 		logger  =  Logger.getLogger("Vetan_Mool");

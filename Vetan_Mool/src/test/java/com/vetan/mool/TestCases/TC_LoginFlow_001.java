@@ -3,7 +3,6 @@ package com.vetan.mool.TestCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import com.vetan.mool.PageObjects.LoginPage;
 
 
 
@@ -18,17 +17,16 @@ public class TC_LoginFlow_001 extends BaseClass {
 		logger.info("Url is opened");
 		
 		driver.manage().window().maximize();
-		
-		LoginPage lp = new LoginPage(driver);
-		Thread.sleep(2000);
 
 		BaseClass BC = new BaseClass();
 		Thread.sleep(2000);
 
 		BC.login();
 		Thread.sleep(2000);
+
+		System.out.println(driver.getTitle());	
 		
-		if(driver.getTitle().contains("Mool Innovation Labs"))
+		if(driver.getTitle().contains("Organization | Dashboard"))
 		{
 			Assert.assertTrue(true);
 			logger.info("Login Test passed");

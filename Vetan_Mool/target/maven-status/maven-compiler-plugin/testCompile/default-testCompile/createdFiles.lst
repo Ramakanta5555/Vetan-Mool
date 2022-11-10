@@ -5,6 +5,7 @@ com/vetan/mool/PageObjects/PayRollPage.class
 com/vetan/mool/TestCases/TC_PayRollProcess_001.class
 com/vetan/mool/PageObjects/AttendancePage.class
 com/vetan/mool/PageObjects/MappedOrgPage.class
+com/vetan/mool/PageObjects/PayoutsPage.class
 com/vetan/mool/TestCases/TC_Attendance_001.class
 com/vetan/mool/PageObjects/LandingPageCalculatorPage.class
 com/vetan/mool/TestCases/TC_EmployeeProfilePage_001.class
