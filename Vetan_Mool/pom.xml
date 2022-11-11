@@ -36,8 +36,13 @@
             <!-- <suiteXmlFile>testNG.xml</suiteXmlFile> -->
             <suiteXmlFile>testNG.xml</suiteXmlFile>
           </suiteXmlFiles>
+		  <skipTests>false</skipTests>
+          <testFailureIgnore>true</testFailureIgnore>
+          <forkMode>once</forkMode>
         </configuration>
       </plugin>
+
+
       	
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
