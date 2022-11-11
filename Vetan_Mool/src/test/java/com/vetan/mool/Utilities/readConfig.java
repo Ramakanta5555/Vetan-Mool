@@ -38,6 +38,12 @@ public class readConfig {
 		String url = pro.getProperty("landingPageURL");
 		return url;
 	}
+
+	public String getdevURl()
+	{
+		String url = pro.getProperty("devURL");
+		return url;
+	}
 	
 
 	public String getuserName()

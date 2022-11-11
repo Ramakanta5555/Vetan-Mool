@@ -29,6 +29,7 @@ public class BaseClass {
 	public String vetanURL = readconfig.getvetanURL();
 	public String stageURl = readconfig.getstageURL();
 	public String landingPageURL = readconfig.getlandingPageURL();
+	public String devURL = readConfig.getdevURl();
 	public String userName = readconfig.getuserName();
 	public String password = readconfig.getpassword();
 	public static WebDriver driver; 
