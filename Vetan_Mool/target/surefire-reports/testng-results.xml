@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-11T15:20:59 IST" name="Vetan_MoolV1" finished-at="2022-11-11T15:21:35 IST" duration-ms="35987">
+  <suite started-at="2022-11-11T15:46:35 IST" name="Vetan_MoolV1" finished-at="2022-11-11T15:47:07 IST" duration-ms="32121">
     <groups>
     </groups>
-    <test started-at="2022-11-11T15:20:59 IST" name="Mool Login Flow Chrome" finished-at="2022-11-11T15:21:35 IST" duration-ms="35987">
+    <test started-at="2022-11-11T15:46:35 IST" name="Mool Login Flow Chrome" finished-at="2022-11-11T15:47:07 IST" duration-ms="32121">
       <class name="com.vetan.mool.TestCases.TC_LoginFlow_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vetan.mool.TestCases.TC_LoginFlow_001@163e4e87]" started-at="2022-11-11T15:20:59 IST" name="setup" finished-at="2022-11-11T15:21:17 IST" duration-ms="17849" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vetan.mool.TestCases.TC_LoginFlow_001@163e4e87]" started-at="2022-11-11T15:46:35 IST" name="setup" finished-at="2022-11-11T15:46:49 IST" duration-ms="13287" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:0, instance:com.vetan.mool.TestCases.TC_LoginFlow_001@163e4e87]" started-at="2022-11-11T15:21:17 IST" name="LoginTest" finished-at="2022-11-11T15:21:35 IST" duration-ms="17945" status="PASS">
+        <test-method signature="LoginTest()[pri:0, instance:com.vetan.mool.TestCases.TC_LoginFlow_001@163e4e87]" started-at="2022-11-11T15:46:49 IST" name="LoginTest" finished-at="2022-11-11T15:47:07 IST" duration-ms="18642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vetan.mool.TestCases.TC_LoginFlow_001@163e4e87]" started-at="2022-11-11T15:21:35 IST" name="tearDown" finished-at="2022-11-11T15:21:35 IST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vetan.mool.TestCases.TC_LoginFlow_001@163e4e87]" started-at="2022-11-11T15:47:07 IST" name="tearDown" finished-at="2022-11-11T15:47:07 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
