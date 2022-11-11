@@ -39,7 +39,7 @@ public class readConfig {
 		return url;
 	}
 
-	public String getdevURl()
+	public String getdevURL()
 	{
 		String url = pro.getProperty("devURL");
 		return url;
