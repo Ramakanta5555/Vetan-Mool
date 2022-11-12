@@ -115,3 +115,6 @@
 2022-11-12 01:56:35,655 [main] INFO Vetan_Mool - Login Test passed
 2022-11-12 02:03:25,756 [main] INFO Vetan_Mool - Url is opened
 2022-11-12 02:03:43,659 [main] INFO Vetan_Mool - Login Test passed
+2022-11-12 15:49:12,986 [main] INFO Vetan_Mool - Failed to create WeeklyOff
+2022-11-12 15:51:05,916 [main] INFO Vetan_Mool - Failed to create WeeklyOff
+2022-11-12 15:56:28,647 [main] INFO Vetan_Mool - Failed to create WeeklyOff

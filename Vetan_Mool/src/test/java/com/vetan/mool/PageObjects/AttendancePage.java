@@ -2,6 +2,7 @@ package com.vetan.mool.PageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -272,7 +273,7 @@ WebDriver ldriver;
 		btnAddNewWeeklyOff.click();
 	}
 	
-	@FindBy(xpath = "//body/div/div[contains(@class,'ant-modal-root')]/div[contains(@role,'dialog')]/div[contains(@role,'document')]/div[contains(@class,'ant-modal-content')]/div[contains(@class,'ant-modal-body')]/div[contains(@class,'ant-spin-nested-loading')]/div[contains(@class,'ant-spin-container')]/div[contains(@class,'add-new-leave-modal-body')]/div[contains(@class,'app-input-field-container-1')]/input[1]")
+	@FindBy(xpath = "(//input[@placeholder=' '])[1]")
 	WebElement txtWeeklyOffName;
 	
 	public void settxtWeeklyOffName(String wName)
@@ -280,7 +281,7 @@ WebDriver ldriver;
 		txtWeeklyOffName.sendKeys(wName);
 	}
 	
-	@FindBy(xpath = "(//span[contains(@title,'General')][normalize-space()='General'])[2]")
+	@FindBy(xpath = "(//span)[62]")
 	WebElement btnWeeklyOffGroup;
 	
 	public void clickbtnWeeklyOffGroup()
@@ -296,7 +297,7 @@ WebDriver ldriver;
 		btnGroupA.click();
 	}
 	
-	@FindBy(xpath = "(//span[@title='Sun'])[1]")
+	@FindBy(xpath = "(//span[@class='ant-select-selection-item'])[4]")
 	WebElement btnWeeklyOffOne;
 	
 	public void clickbtnWeeklyOffOne()
@@ -312,7 +313,7 @@ WebDriver ldriver;
 		btnWeeklyOffOneTuesday.click();
 	}
 	
-	@FindBy(xpath = "(//span[@title='Disabled'])[1]")
+	@FindBy(xpath = "(//input[@id='rc_select_4'])[1]")
 	WebElement btnWeeklyOffTwo;
 	
 	public void clickbtnWeeklyOffTwo()
@@ -354,7 +355,7 @@ WebDriver ldriver;
 	
 	//Attendance Section
 	
-	@FindBy(xpath = "(//a[contains(@href,'/org/attendance/attendance')])[1]")
+	@FindBy(xpath = "(//a[@href='/org/attendance/attendance'])[1]")
 	WebElement btnAttendance;
 	
 	public void clickbtnAttendance()
@@ -371,7 +372,48 @@ WebDriver ldriver;
 	{
 		btnDailyAttendance.click();
 	}
+
+	@FindBy(xpath = "(//span[normalize-space()='Download PDF'])[1]")
+	@CacheLookup
+	WebElement btnAttendanceDownloadPdf;
+
+	public void clickbtnAttendanceDownloadPdf()
+	{
+		btnAttendanceDownloadPdf.click();
+	}
+
+	@FindBy(xpath = "(//div[@id='rc-tabs-1-tab-2'])[1]")
+	@CacheLookup
+	WebElement btnAttendancereport;
+
+	public void clickbtnAttendanceReport()
+	{
+		btnAttendancereport.click();
+	}
+
+	@FindBy(xpath = "(//span[contains(text(),'Download PDF')])[2]")
+	@CacheLookup
+	WebElement btnAttendanceReportDownloadPdf;
+
+	public void clickbtnAttendanceReportDownloadPdf()
+	{
+		btnAttendanceReportDownloadPdf.click();
+	}
+
+	@FindBy(xpath = "(//a[@href='/org/attendance/leave'])[1]")
+	@CacheLookup
+	WebElement btnLeave;
+
+	public void clickbtnLeave()
+	{
+		btnLeave.click();
+	}
+
 	
+
+
+	
+
 	
 	
 	

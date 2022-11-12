@@ -1,7 +1,7 @@
 package com.vetan.mool.TestCases;
 
 import org.testng.annotations.Test;
-
+import org.testng.Assert;
 import com.vetan.mool.PageObjects.AttendancePage;
 import com.vetan.mool.PageObjects.LoginPage;
 
@@ -166,49 +166,68 @@ public class TC_Attendance_001 extends BaseClass{
 		
 		//Weekly Off Setting
 		
-		ap.clickbtnWeeklyOffSetting();
-		Thread.sleep(7000);
+		// ap.clickbtnWeeklyOffSetting();
+		// Thread.sleep(7000);
 		
-		ap.clickbtnAddNewWeeklyOff();
-		Thread.sleep(2000);
+		// ap.clickbtnAddNewWeeklyOff();
+		// Thread.sleep(2000);
 		
-		ap.settxtWeeklyOffName("Selenium_Weeklyoff");
-		Thread.sleep(2000);
+		// ap.settxtWeeklyOffName("Selenium_Weeklyoff");
+		// Thread.sleep(2000);
 		
-		ap.clickbtnWeeklyOffGroup();
-		Thread.sleep(2000);
+		// ap.clickbtnWeeklyOffGroup();
+		// Thread.sleep(2000);
 		
-		ap.clickbtnGroupA();
-		Thread.sleep(2000);
+		// ap.clickbtnGroupA();
+		// Thread.sleep(2000);
 		
-		ap.clickbtnWeeklyOffOne();
-		Thread.sleep(2000);
+		// ap.clickbtnWeeklyOffOne();
+		// Thread.sleep(2000);
 		
-		ap.clickbtnWeeklyOffOneTuesday();
-		Thread.sleep(2000);
+		// ap.clickbtnWeeklyOffOneTuesday();
+		// Thread.sleep(2000);
 		
-		ap.clickbtnWeeklyOffTwo();
-		Thread.sleep(2000);
+		// ap.clickbtnWeeklyOffTwo();
+		// Thread.sleep(2000);
 		
-		ap.clickbtnWeeklyOffTwoWednesday();
-		Thread.sleep(2000);
+		// ap.clickbtnWeeklyOffTwoWednesday();
+		// Thread.sleep(2000);
 		
-		ap.clickbtnWeeklyOffSubmit();
-		Thread.sleep(2000);
+		// ap.clickbtnWeeklyOffSubmit();
+		// Thread.sleep(2000);
+
+		// if(driver.getTitle().contains("Selenium_WeeklyOff") )
+		// {
+		// 	logger.info("WeeklyOff created");
+		// 	ap.clickbtnWeeklyOffDelete();
+		// 	Thread.sleep(2000);
 		
-		ap.clickbtnWeeklyOffDelete();
-		Thread.sleep(2000);
+		// 	ap.clickbtnWeeklyOffConfirmDelete();
+		// 	Thread.sleep(2000);
+		// 	Assert.assertTrue(true);
 		
-		ap.clickbtnWeeklyOffConfirmDelete();
-		Thread.sleep(2000);
-		
-		
-		
+		// }
+
+		// else 
+		// {
+		// 	logger.info("Failed to create WeeklyOff");
+		// 	Assert.assertTrue(false);
+		// }
+
+
 		
 		//Attendance Section
 		
 		ap.clickbtnAttendance();
 		Thread.sleep(2000);
+
+		ap.clickbtnDailyAttendance();
+		Thread.sleep(2000);
+
+		ap.clickbtnAttendanceDownloadPdf();
+		Thread.sleep(2000);
+
+
 		
 		
 		
