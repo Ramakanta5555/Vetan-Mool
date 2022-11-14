@@ -1,7 +1,7 @@
 package com.vetan.mool.TestCases;
 
 import org.testng.annotations.Test;
-import org.testng.Assert;
+// import org.testng.Assert;
 import com.vetan.mool.PageObjects.AttendancePage;
 import com.vetan.mool.PageObjects.LoginPage;
 
