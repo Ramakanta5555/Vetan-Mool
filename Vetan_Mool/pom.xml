@@ -29,14 +29,14 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M1</version>
         <configuration>   
+		<useSystemClassLoader>false</useSystemClassLoader>
+          <forkMode>once</forkMode>
     <!--  Here you can give the xml file name where you storing your testcases -->
             <!-- <suiteXmlFile>employeeProfilePageTestNG.xml</suiteXmlFile> -->
             <!-- <suiteXmlFile>testNG.xml</suiteXmlFile> -->
 			<suiteXmlFiles>
             <suiteXmlFile>testNG.xml</suiteXmlFile>
           </suiteXmlFiles>
-		  <useSystemClassLoader>false</useSystemClassLoader>
-          <forkMode>once</forkMode>
         </configuration>
       </plugin>
 

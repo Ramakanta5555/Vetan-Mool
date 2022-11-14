@@ -1,6 +1,5 @@
 package com.vetan.mool.PageObjects;
 
-import org.checkerframework.checker.units.qual.Acceleration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
