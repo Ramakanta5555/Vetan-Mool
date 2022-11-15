@@ -2,7 +2,7 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name = "Vetan_MoolV1">
+<suite name = "Vetan_MoolV1" verbose="1">
 	<!-- <test thread-count="5" name="Test">
     <classes>
       <class name="org.tchateau.mavenTest.RESTAPITest"/>
