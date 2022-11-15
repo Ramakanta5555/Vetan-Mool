@@ -25,9 +25,16 @@
       </plugin>
       
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
+        <!-- <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0M1</version>
+        <version>3.0.0M1</version> -->
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-testng -->
+		<dependency>
+    		<groupId>org.apache.maven.surefire</groupId>
+    		<artifactId>surefire-testng</artifactId>
+    		<version>3.0.0-M3</version>
+		</dependency>
+
         <configuration>   
 		<useSystemClassLoader>false</useSystemClassLoader>
           <forkMode>once</forkMode>
