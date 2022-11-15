@@ -25,16 +25,9 @@
       </plugin>
       
       <plugin>
-        <!-- <groupId>org.apache.maven.plugins</groupId>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0M1</version> -->
-		<!-- https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-testng -->
-		<dependency>
-    		<groupId>org.apache.maven.surefire</groupId>
-    		<artifactId>surefire-testng</artifactId>
-    		<version>3.0.0-M3</version>
-		</dependency>
-
+        <version>3.0.0M1</version>
         <configuration>   
 		<useSystemClassLoader>false</useSystemClassLoader>
           <forkMode>once</forkMode>
@@ -135,6 +128,14 @@
     	<artifactId>log4j</artifactId>
     	<version>1.2.17</version>
 	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-testng -->
+	<dependency>
+    	<groupId>org.apache.maven.surefire</groupId>
+    	<artifactId>surefire-testng</artifactId>
+   	 	<version>3.0.0-M3</version>
+	</dependency>
+
  	
   </dependencies>
   
