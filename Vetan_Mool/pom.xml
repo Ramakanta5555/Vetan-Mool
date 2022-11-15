@@ -27,7 +27,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M1</version>
+        <version>3.0.0-M3</version>
         <configuration> 
 		<useManifestOnlyJar>false</useManifestOnlyJar>  
 		<useSystemClassLoader>false</useSystemClassLoader>
@@ -134,8 +134,16 @@
 	<dependency>
     	<groupId>org.apache.maven.surefire</groupId>
     	<artifactId>surefire-testng</artifactId>
-   	 	<version>3.0.0-M1</version>
+   	 	<version>3.0.0-M3</version>
 	</dependency>
+
+	<dependency>
+		<groupId>org.apache.maven.surefire</groupId>
+		<artifactId>surefire-testng-utils</artifactId>
+		<version>3.0.0-M3</version>
+	</dependency>
+<!-- Thanks for using https://jar-download.com -->
+
 
  	
   </dependencies>
