@@ -18,7 +18,7 @@
 	<test name="Mool Login Flow Chrome"> 
 		<parameter name="browser" value="chrome"/>
 			<classes>
-				<class name="com.vetan.mool.TestCases.TC_LoginFlow_001"></class>
+				<class name="com.vetan.mool.TestCases.TC_LandingPageCalculator_001"></class>
 			</classes>
 	</test> 
 

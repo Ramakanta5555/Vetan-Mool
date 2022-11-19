@@ -62,8 +62,8 @@ public class TC_LandingPageCalculator_001 extends BaseClass{
         LPCP.clickbtnFoodAllowancesDropdown();
         Thread.sleep(2000);
 
-        LPCP.clickbtnFoodAlloances();
-        Thread.sleep(2000);
+        // LPCP.clickbtnFoodAlloances();
+        // Thread.sleep(2000);
 
         LPCP.settxtFoodAllowancesAmount("2500");
         Thread.sleep(2000);

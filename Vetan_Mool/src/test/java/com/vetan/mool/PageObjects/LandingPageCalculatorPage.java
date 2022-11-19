@@ -17,7 +17,7 @@ public class LandingPageCalculatorPage {
         PageFactory.initElements(rdriver, this);
     }
 
-    @FindBy(xpath = "(//li[contains(text(),'Calculator')])[1]")
+    @FindBy(xpath = "(//li[normalize-space()='Calculator'])[1]")
     @CacheLookup
     WebElement btnCalculator;
 
@@ -53,7 +53,7 @@ public class LandingPageCalculatorPage {
         txtGrossSalary.sendKeys(grossSalary);
     }
 
-    @FindBy(xpath = "(//input[@placeholder='Net pay/ Inhand (per month)'])[1]")
+    @FindBy(xpath = "(//input[@placeholder='For ex: Netpay =15,000 INR'])[1]")
     @CacheLookup
     WebElement txtNetpay;
 
@@ -62,7 +62,7 @@ public class LandingPageCalculatorPage {
         txtNetpay.sendKeys(netPay);
     }
 
-    @FindBy(xpath = "(//input[@placeholder='House rent allowance (HRA)'])[1]")
+    @FindBy(xpath = "(//input[@placeholder='House Rent Allowance'])[1]")
     @CacheLookup
     WebElement txtHRA;
 
@@ -80,7 +80,7 @@ public class LandingPageCalculatorPage {
         txtTotalTDS.sendKeys(totalTDS);
     }
 
-    @FindBy(xpath = "(//input[@placeholder='PF Contibution'])[1]")
+    @FindBy(xpath = "(//input[@placeholder='Employee PF Contribution'])[1]")
     @CacheLookup
     WebElement txtEmployeePF;
 
@@ -89,7 +89,8 @@ public class LandingPageCalculatorPage {
         txtEmployeePF.sendKeys(employeePF);
     }
 
-    @FindBy(xpath = "(//button[@class='ant-switch ant-switch-checked'])[1]")
+    // rented Yes/No
+    @FindBy(xpath = "")
     @CacheLookup
     WebElement btnEnableRentedHouse;
 
@@ -98,6 +99,7 @@ public class LandingPageCalculatorPage {
         btnEnableRentedHouse.click();
     }
 
+    //metrocity Yes/No
     @FindBy(xpath = "(//button[@class='ant-switch ant-switch-small'])[1]")
     @CacheLookup
     WebElement btnEnableMerocity;
@@ -129,7 +131,7 @@ public class LandingPageCalculatorPage {
     @CacheLookup
     WebElement btnFoodAllowance;
 
-    public void clickbtnFoodAlloances()
+    public void clickbtnFoodAlloanwces()
     {
         btnFoodAllowance.click();
     }
