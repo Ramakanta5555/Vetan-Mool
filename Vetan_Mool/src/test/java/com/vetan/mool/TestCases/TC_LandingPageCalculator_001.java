@@ -2,13 +2,9 @@ package com.vetan.mool.TestCases;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.By.ByXPath;
-import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.WebElement;  
 import org.testng.annotations.Test;
-
 import com.vetan.mool.PageObjects.LandingPageCalculatorPage;
-import com.vetan.mool.Utilities.xlutils;
 
 public class TC_LandingPageCalculator_001 extends BaseClass{
 
