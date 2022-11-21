@@ -1,8 +1,14 @@
 package com.vetan.mool.TestCases;
 
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By.ByXPath;
+import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
 import com.vetan.mool.PageObjects.LandingPageCalculatorPage;
+import com.vetan.mool.Utilities.xlutils;
 
 public class TC_LandingPageCalculator_001 extends BaseClass{
 
@@ -32,16 +38,16 @@ public class TC_LandingPageCalculator_001 extends BaseClass{
         LPCP.settxtEmail("ramakanta.samal@moolfinace.com");
         Thread.sleep(2000);
 
-        LPCP.settxtGrossSalary("150000");
+        LPCP.settxtGrossSalary("60000");
         Thread.sleep(2000);
 
-        LPCP.settxtNetPay("120000");
+        LPCP.settxtNetPay("53000");
         Thread.sleep(2000);
 
-        LPCP.settxtHRA("10000");
+        LPCP.settxtHRA("8000");
         Thread.sleep(2000);
 
-        LPCP.setxtTotalTDS("6000");
+        LPCP.setxtTotalTDS("1000");
         Thread.sleep(2000);
 
         LPCP.settxtEmployeePF("1800");
@@ -56,14 +62,14 @@ public class TC_LandingPageCalculator_001 extends BaseClass{
         LPCP.clickbtnEnableMerocity();
         Thread.sleep(2000);
 
-        LPCP.settxtActualRentPaid("13000");
+        LPCP.settxtActualRentPaid("9000");
         Thread.sleep(2000);
 
-        LPCP.clickbtnFoodAllowancesDropdown();
+        LPCP.clickbtnAllowancesDropdown();
         Thread.sleep(2000);
 
-        // LPCP.clickbtnFoodAlloances();
-        // Thread.sleep(2000);
+        LPCP.clickbtnFoodAllowances();
+        Thread.sleep(2000);
 
         LPCP.settxtFoodAllowancesAmount("2500");
         Thread.sleep(2000);
@@ -113,7 +119,7 @@ public class TC_LandingPageCalculator_001 extends BaseClass{
         LPCP.settxtEmployeeContributionToNPS80CCD1B("50000");
         Thread.sleep(2000);
 
-        LPCP.settxtDisabledDependentDeduction80DD("10000");
+        LPCP.settxtDisabledDependentDeduction80DD("10000"); 
         Thread.sleep(2000);
 
         LPCP.settxtDisability80U("10000");
@@ -125,7 +131,18 @@ public class TC_LandingPageCalculator_001 extends BaseClass{
         LPCP.clickbtnCheckNow();
         Thread.sleep(10000);
 
-
+        WebElement a = driver.findElement(By.xpath("//h2[contains(text(),'Your result has been sent to your mail. Please che')]"));
+        
+        if(a!= null && driver.getTitle().equals("Mool Finance")) 
+        {
+            Assert.assertTrue(true);
+            logger.info("Landing Page Calculator Test Passed"); 
+        }
+        else
+        {
+            Assert.assertTrue(false);
+            logger.info("Landing Page Calculator Test Failed");
+        }
         
     }
 }

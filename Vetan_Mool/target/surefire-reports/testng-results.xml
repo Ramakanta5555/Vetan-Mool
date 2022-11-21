@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-19T11:46:14 IST" name="Vetan_MoolV1" finished-at="2022-11-19T11:47:04 IST" duration-ms="50542">
+  <suite started-at="2022-11-21T13:53:37 IST" name="Vetan_MoolV1" finished-at="2022-11-21T13:55:38 IST" duration-ms="120743">
     <groups>
     </groups>
-    <test started-at="2022-11-19T11:46:14 IST" name="Mool Login Flow Chrome" finished-at="2022-11-19T11:47:04 IST" duration-ms="50542">
+    <test started-at="2022-11-21T13:53:37 IST" name="Mool Login Flow Chrome" finished-at="2022-11-21T13:55:38 IST" duration-ms="120743">
       <class name="com.vetan.mool.TestCases.TC_LandingPageCalculator_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vetan.mool.TestCases.TC_LandingPageCalculator_001@65466a6a]" started-at="2022-11-19T11:46:14 IST" name="setup" finished-at="2022-11-19T11:46:31 IST" duration-ms="17527" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vetan.mool.TestCases.TC_LandingPageCalculator_001@65466a6a]" started-at="2022-11-21T13:53:37 IST" name="setup" finished-at="2022-11-21T13:53:59 IST" duration-ms="21731" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,89 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LandingPageCalculator()[pri:0, instance:com.vetan.mool.TestCases.TC_LandingPageCalculator_001@65466a6a]" started-at="2022-11-19T11:46:31 IST" name="LandingPageCalculator" finished-at="2022-11-19T11:47:04 IST" duration-ms="32810" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=107.0.5304.110)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Ramakantas-MacBook-Pro.local', ip: '2405:201:d006:b16e:19a2:ff9:de90:724b%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0.1', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d9ce1e2e11403f622390c5149f643cd, findElement {using=id, value=}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/3b/mh87qd255wx...}, goog:chromeOptions: {debuggerAddress: localhost:52618}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52618/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d9ce1e2e11403f622390c5149f643cd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=107.0.5304.110)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Ramakantas-MacBook-Pro.local', ip: '2405:201:d006:b16e:19a2:ff9:de90:724b%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0.1', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d9ce1e2e11403f622390c5149f643cd, findElement {using=id, value=}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/3b/mh87qd255wx...}, goog:chromeOptions: {debuggerAddress: localhost:52618}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:52618/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d9ce1e2e11403f622390c5149f643cd
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at com.vetan.mool.PageObjects.LandingPageCalculatorPage.clickbtnEnableRentedHouse(LandingPageCalculatorPage.java:99)
-at com.vetan.mool.TestCases.TC_LandingPageCalculator_001.LandingPageCalculator(TC_LandingPageCalculator_001.java:50)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+        <test-method signature="LandingPageCalculator()[pri:0, instance:com.vetan.mool.TestCases.TC_LandingPageCalculator_001@65466a6a]" started-at="2022-11-21T13:53:59 IST" name="LandingPageCalculator" finished-at="2022-11-21T13:55:38 IST" duration-ms="98734" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LandingPageCalculator -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vetan.mool.TestCases.TC_LandingPageCalculator_001@65466a6a]" started-at="2022-11-19T11:47:04 IST" name="tearDown" finished-at="2022-11-19T11:47:04 IST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vetan.mool.TestCases.TC_LandingPageCalculator_001@65466a6a]" started-at="2022-11-21T13:55:38 IST" name="tearDown" finished-at="2022-11-21T13:55:38 IST" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

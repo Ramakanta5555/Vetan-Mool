@@ -90,7 +90,7 @@ public class LandingPageCalculatorPage {
     }
 
     // rented Yes/No
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//input[@value='true'])[1]")
     @CacheLookup
     WebElement btnEnableRentedHouse;
 
@@ -100,7 +100,7 @@ public class LandingPageCalculatorPage {
     }
 
     //metrocity Yes/No
-    @FindBy(xpath = "(//button[@class='ant-switch ant-switch-small'])[1]")
+    @FindBy(xpath = "(//input[@value='true'])[2]")
     @CacheLookup
     WebElement btnEnableMerocity;
 
@@ -118,20 +118,20 @@ public class LandingPageCalculatorPage {
         txtActualRentPaid.sendKeys(actualRentPaid);
     }
 
-    @FindBy(xpath = "(//span[@class='ant-select-selection-item'])[1]")
+    @FindBy(xpath = "(//span[@title='- Select an allowance - '])[1]")
     @CacheLookup
-    WebElement btnFoodAllowancesDropdown;
+    WebElement btnAllowancesDropdown;
 
-    public void clickbtnFoodAllowancesDropdown()
+    public void clickbtnAllowancesDropdown()
     {
-        btnFoodAllowancesDropdown.click();
+        btnAllowancesDropdown.click();
     }
 
-    @FindBy(xpath = "(//div[@title='Food'])[1]")
+    @FindBy(xpath = "(//div[contains(text(),'Food')])[1]")
     @CacheLookup
     WebElement btnFoodAllowance;
 
-    public void clickbtnFoodAlloanwces()
+    public void clickbtnFoodAllowances()
     {
         btnFoodAllowance.click();
     }
@@ -189,7 +189,7 @@ public class LandingPageCalculatorPage {
         btnAddDearnessAllowance.click();
     }
 
-    @FindBy(xpath = "(//div[@class='ant-switch-handle'])[3]")
+    @FindBy(xpath = "(//input[@value='true'])[3]")
     @CacheLookup
     WebElement btnEnableItDeclaration;
 
@@ -305,6 +305,18 @@ public class LandingPageCalculatorPage {
     {
         btnCheckNow.click();
     }
+
+   
+    @FindBy(xpath = "(//h2[contains(text(),'Your result has been sent to your mail. Please che')])[1]")
+    @CacheLookup
+    WebElement VerifyEmailText;
+
+    public void verifyEmailText()
+    {
+        VerifyEmailText.isDisplayed();
+    }
+
+    
 
 
 }
