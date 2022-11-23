@@ -127,7 +127,7 @@ public class TC_LandingPageCalculator_001 extends BaseClass{
         LPCP.clickbtnCheckNow();
         Thread.sleep(10000);
 
-        WebElement a = driver.findElement(By.xpath("//h2[contains(text(),'Your result has been sent to your mail. Please che')]"));
+        WebElement a = driver.findElement(By.xpath("(//h2[contains(text(),'Your result has been sent to your mail. Please che')])[1]"));
         
         if(a!= null && driver.getTitle().equals("Mool Finance")) 
         {

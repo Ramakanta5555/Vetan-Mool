@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-21T13:53:37 IST" name="Vetan_MoolV1" finished-at="2022-11-21T13:55:38 IST" duration-ms="120743">
+  <suite started-at="2022-11-23T19:19:44 IST" name="Vetan_MoolV1" finished-at="2022-11-23T19:21:38 IST" duration-ms="113306">
     <groups>
     </groups>
-    <test started-at="2022-11-21T13:53:37 IST" name="Mool Login Flow Chrome" finished-at="2022-11-21T13:55:38 IST" duration-ms="120743">
+    <test started-at="2022-11-23T19:19:44 IST" name="Mool Login Flow Chrome" finished-at="2022-11-23T19:21:38 IST" duration-ms="113306">
       <class name="com.vetan.mool.TestCases.TC_LandingPageCalculator_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vetan.mool.TestCases.TC_LandingPageCalculator_001@65466a6a]" started-at="2022-11-21T13:53:37 IST" name="setup" finished-at="2022-11-21T13:53:59 IST" duration-ms="21731" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vetan.mool.TestCases.TC_LandingPageCalculator_001@65466a6a]" started-at="2022-11-23T19:19:44 IST" name="setup" finished-at="2022-11-23T19:19:59 IST" duration-ms="14517" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LandingPageCalculator()[pri:0, instance:com.vetan.mool.TestCases.TC_LandingPageCalculator_001@65466a6a]" started-at="2022-11-21T13:53:59 IST" name="LandingPageCalculator" finished-at="2022-11-21T13:55:38 IST" duration-ms="98734" status="PASS">
+        <test-method signature="LandingPageCalculator()[pri:0, instance:com.vetan.mool.TestCases.TC_LandingPageCalculator_001@65466a6a]" started-at="2022-11-23T19:19:59 IST" name="LandingPageCalculator" finished-at="2022-11-23T19:21:37 IST" duration-ms="98596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LandingPageCalculator -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vetan.mool.TestCases.TC_LandingPageCalculator_001@65466a6a]" started-at="2022-11-21T13:55:38 IST" name="tearDown" finished-at="2022-11-21T13:55:38 IST" duration-ms="188" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vetan.mool.TestCases.TC_LandingPageCalculator_001@65466a6a]" started-at="2022-11-23T19:21:37 IST" name="tearDown" finished-at="2022-11-23T19:21:38 IST" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
