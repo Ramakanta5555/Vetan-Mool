@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 113.569 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 68.198 s <<< FAILURE! - in TestSuite
+SignupTest(com.vetan.mool.TestCases.TC_SignupFlow_001)  Time elapsed: 28.626 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(text(),'Monthly')])[1]"}
+  (Session info: chrome=107.0.5304.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Ramakantas-MacBook-Pro.local', ip: 'fe80:0:0:0:86d:a9fb:93ee:b43a%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0.1', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7c4a2e98d6af91fb9243587d2bfbe42c, findElement {using=xpath, value=(//div[contains(text(),'Monthly')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/3b/mh87qd255wx...}, goog:chromeOptions: {debuggerAddress: localhost:51877}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51877/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7c4a2e98d6af91fb9243587d2bfbe42c
+	at com.vetan.mool.TestCases.TC_SignupFlow_001.SignupTest(TC_SignupFlow_001.java:47)
+

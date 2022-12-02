@@ -1,6 +1,5 @@
 package com.vetan.mool.PageObjects;
 
-import org.asynchttpclient.AsyncHandler.State;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -143,6 +142,15 @@ WebDriver ldriver;
 	public void clickbtnStandardPlan()
 	{
 		btnStandardPlan.click();
+	}
+
+	@FindBy(xpath = "(//p[@class='font-size-14 hover'])[1]")
+	@CacheLookup
+	WebElement btnChangePlan;
+
+	public void clickbtnChangePlan()
+	{
+		btnChangePlan.click();
 	}
 
 	@FindBy(xpath = "(//*[name()='svg'])[1]")
