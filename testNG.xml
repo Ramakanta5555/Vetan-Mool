@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "Vetan_MoolV1" verbose="1">
+	<!-- <test thread-count="5" name="Test">
+    <classes>
+      <class name="org.tchateau.mavenTest.RESTAPITest"/>
+      <class name="org.tchateau.mavenTest.SeleniumTest"/>
+      <class name="org.tchateau.mavenTest.AppiumTest"/>
+    </classes>
+  </test>  -->
+
+	<listeners>
+		<listener class-name="com.vetan.mool.Utilities.reporting"></listener>
+	</listeners>
+	
+	<test name="Mool Login Flow Chrome"> 
+		<parameter name="browser" value="chrome"/>
+			<classes>
+				<class name="com.vetan.mool.TestCases.TC_EmployeeProfilePage_001"></class>
+			</classes>
+	</test> 
+
+	<!-- <test name="Mool Login Flow Safari"> 
+		<parameter name="browser" value="safari"/>
+			<classes>
+				<class name="com.vetan.mool.TestCases.TC_PayRollProcess_001"></class>
+			</classes>
+	</test> -->
+	
+</suite>
+
